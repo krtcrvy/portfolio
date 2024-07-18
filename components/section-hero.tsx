@@ -5,28 +5,28 @@ import Link from "next/link";
 
 export default function SectionHero() {
   return (
-    <section className="relative bg-stone-950 py-24 overflow-hidden">
+    <section className="relative overflow-hidden bg-stone-950 py-24">
       <div
-        className="top-0 left-0 z-10 absolute bg-[rgba(249,115,22,0.5)] opacity-50 blur-[80px] rounded-full w-[800px] h-[800px] translate-x-[-50%] translate-y-[-50%]"
+        className="absolute top-0 left-0 z-10 h-[800px] w-[800px] translate-x-[-50%] translate-y-[-50%] rounded-full bg-[rgba(249,115,22,0.5)] opacity-50 blur-[80px]"
         aria-hidden="true"
       />
 
       <div
-        className="top-0 right-0 absolute bg-[rgba(249,115,22,0.5)] opacity-50 blur-[80px] rounded-full w-[500px] h-[500px] translate-x-[20%] translate-y-[30%]"
+        className="absolute top-0 right-0 h-[500px] w-[500px] translate-x-[20%] translate-y-[30%] rounded-full bg-[rgba(249,115,22,0.5)] opacity-50 blur-[80px]"
         aria-hidden="true"
       />
 
-      <div className="items-center gap-8 grid grid-cols-1 lg:grid-cols-2 container">
+      <div className="container grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         <div>
           <Image
             src={myPicture}
             alt="A picture of Kurt Carvey Cadenas"
-            className="brightness-75 shadow-[5px_5px_rgba(249,_115,_22,_0.4),_10px_10px_rgba(249,_115,_22,_0.3),_15px_15px_rgba(249,_115,_22,_0.2),_20px_20px_rgba(249,_115,_22,_0.1),_25px_25px_rgba(249,_115,_22,_0.05)] rounded-md w-[90%]"
+            className="w-[90%] rounded-md shadow-[5px_5px_rgba(249,_115,_22,_0.4),_10px_10px_rgba(249,_115,_22,_0.3),_15px_15px_rgba(249,_115,_22,_0.2),_20px_20px_rgba(249,_115,_22,_0.1),_25px_25px_rgba(249,_115,_22,_0.05)] brightness-75"
           />
         </div>
 
         <div>
-          <span className="inline-block mb-8 font-semibold text-primary uppercase tracking-wider">
+          <span className="mb-8 inline-block font-semibold text-primary uppercase tracking-wider">
             Hi, my name is
           </span>
 

@@ -13,23 +13,23 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full flex justify-center ${
+      className={`fixed top-0 flex w-full justify-center ${
         scrolled
-          ? "shadow-sm bg-transparent backdrop-blur-xl"
+          ? "bg-transparent shadow-sm backdrop-blur-xl"
           : "bg-transparent"
       } z-30 transition-all ease-in`}
     >
-      <div className="flex flex-wrap justify-between items-center py-2.5 container">
+      <div className="container flex flex-wrap items-center justify-between py-2.5">
         <Link href="#">
-          <Image src={logo} alt="Logo" className="w-12 h-12" />
+          <Image src={logo} alt="Logo" className="h-12 w-12" />
         </Link>
 
-        <nav className="lg:block hidden">
+        <nav className="hidden lg:block">
           <ul className="flex gap-16">
             <li>
               <Link
                 href="#"
-                className="text-stone-400 hover:text-primary transition-colors"
+                className="text-stone-400 transition-colors hover:text-primary"
               >
                 Home
               </Link>
@@ -37,7 +37,7 @@ export default function Header() {
             <li>
               <Link
                 href="#"
-                className="text-stone-400 hover:text-primary transition-colors"
+                className="text-stone-400 transition-colors hover:text-primary"
               >
                 About
               </Link>
@@ -45,7 +45,7 @@ export default function Header() {
             <li>
               <Link
                 href="#"
-                className="text-stone-400 hover:text-primary transition-colors"
+                className="text-stone-400 transition-colors hover:text-primary"
               >
                 Projects
               </Link>
@@ -53,7 +53,7 @@ export default function Header() {
             <li>
               <Link
                 href="#"
-                className="text-stone-400 hover:text-primary transition-colors"
+                className="text-stone-400 transition-colors hover:text-primary"
               >
                 Contact
               </Link>
@@ -66,19 +66,19 @@ export default function Header() {
             <Button
               variant="outline"
               size="icon"
-              className="md:hidden shrink-0"
+              className="shrink-0 md:hidden"
             >
-              <Menu className="w-5 h-5" />
+              <Menu className="h-5 w-5" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="left">
-            <nav className="gap-6 grid font-medium text-lg">
+            <nav className="grid gap-6 font-medium text-lg">
               <Link
                 href="#"
                 className="flex items-center gap-2 font-semibold text-lg"
               >
-                <Image src={logo} alt="Logo" className="w-12 h-12" />
+                <Image src={logo} alt="Logo" className="h-12 w-12" />
                 <span className="sr-only">Karbi</span>
               </Link>
               <Link
